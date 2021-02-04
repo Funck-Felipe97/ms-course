@@ -26,7 +26,7 @@ public class WorkerResource {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Worker> findAll(@PathVariable final Long id) {
+    public ResponseEntity<Worker> findById(@PathVariable final Long id) {
         Worker worker = workerRepository.findById(id).orElseThrow(NoSuchElementException::new);
         return ResponseEntity.ok(worker);
     }
