@@ -12,7 +12,7 @@
     <artifactId>hr-payroll</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>hr-payroll</name>
-    <description>Microservice for ht-payroll</description>
+    <description>Microservice for hr-payroll</description>
     <properties>
         <java.version>11</java.version>
     </properties>
@@ -29,6 +29,11 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
