@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("workers/configs")
 public class ConfigPropertiesResource {
 
-    @Value("${test.config}")
+    @Value("${test.config:teste}")
     private String config;
 
     @GetMapping
